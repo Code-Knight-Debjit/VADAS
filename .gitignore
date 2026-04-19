@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+.env
+.env.local
+.DS_Store
+backend/src/rag/uploads/*
+!backend/src/rag/uploads/.gitkeep
+backend/src/rag/storage/*.json
+!backend/src/rag/storage/.gitkeep
+frontend/.vite
+frontend/dist
+backend/logs

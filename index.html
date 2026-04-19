@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Hide Secret Messages Inside Image is a cybersecurity-inspired project website for image steganography with AES encryption, secure sharing, and responsive encode/decode interfaces."
+  >
+  <title>Hide Secret Messages Inside Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="#home" aria-label="Hide Secret Messages Inside Image home">
+          <span class="brand-mark">HS</span>
+          <span class="brand-copy">
+            <strong>Hide Secret Messages Inside Image</strong>
+            <small>Image Steganography + AES Security</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#workflow">How It Works</a>
+          <a href="#technology">Tech Stack</a>
+          <a href="#security">Security</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Secure Visual Communication</p>
+            <h1>Hide Secret Messages Inside Image</h1>
+            <p class="hero-tagline">Secure your data with invisible communication.</p>
+            <p class="hero-text">
+              A modern cybersecurity project that encrypts secret messages with AES and hides
+              them inside images using steganography, enabling private sharing without changing
+              the visible look of the image.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#encode">Encode Message</a>
+              <a class="button button-secondary" href="#decode">Decode Message</a>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <span class="metric-value" data-target="2">0</span>
+                <span class="metric-label">Layer Security Model</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-value" data-target="5">0</span>
+                <span class="metric-label">Core Workflow Stages</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-value" data-target="24">0</span>
+                <span class="metric-label">Auto-Expiry Ready</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-console">
+              <div class="console-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="console-grid">
+                <article class="console-card emphasis">
+                  <p>AES-256</p>
+                  <strong>Message Encrypted</strong>
+                  <small>Payload secured before embedding</small>
+                </article>
+                <article class="console-card">
+                  <p>OpenCV</p>
+                  <strong>Pixel Layer Masking</strong>
+                  <small>Image appearance remains unchanged</small>
+                </article>
+                <article class="console-card wide">
+                  <p>Secure Share Pipeline</p>
+                  <div class="signal-stream" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <small>One-time access, expiry links, and QR key exchange</small>
+                </article>
+              </div>
+              <div class="glow-ring ring-one"></div>
+              <div class="glow-ring ring-two"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Project</p>
+            <h2>Steganography makes secret communication blend into ordinary images.</h2>
+            <p>
+              In simple terms, steganography hides a message inside another file so that the
+              message is not obvious to anyone looking at it. In this project, a secret text is
+              first encrypted with AES and then embedded inside an image to create a secure
+              stego-image for confidential sharing.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="info-card reveal">
+              <h3>What It Solves</h3>
+              <p>
+                Traditional text sharing can expose sensitive information. This system adds privacy
+                by hiding encrypted content inside ordinary digital images.
+              </p>
+            </article>
+            <article class="info-card reveal">
+              <h3>Why Secure Communication Matters</h3>
+              <p>
+                Secure communication helps protect personal, academic, and professional data from
+                interception, misuse, and unauthorized access.
+              </p>
+            </article>
+            <article class="info-card reveal">
+              <h3>Project Overview</h3>
+              <p>
+                The backend uses Python and OpenCV for image processing, while the frontend uses
+                HTML, CSS, and JavaScript to deliver a clean and user-friendly interface.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Features</p>
+            <h2>Designed for secure sharing, clarity, and practical usability.</h2>
+            <p>
+              The platform combines encryption, image-based hiding, and controlled sharing tools
+              into one polished workflow for academic demonstration or portfolio presentation.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="feature-icon">🔐</div>
+              <h3>Message Encryption Using AES</h3>
+              <p>Secret text is encrypted first, creating a strong security layer before embedding.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">🖼</div>
+              <h3>Image-Based Data Hiding</h3>
+              <p>Encrypted data is concealed in image pixels without visibly changing the image.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">⬇</div>
+              <h3>Stego-Image Generation</h3>
+              <p>Users receive a shareable output image containing the hidden protected message.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">⏱</div>
+              <h3>One-Time Secure Access</h3>
+              <p>Shared outputs can be tied to a single retrieval flow for stronger message control.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">⌛</div>
+              <h3>Auto-Expiry Links</h3>
+              <p>Time-limited access reduces exposure by automatically invalidating old share links.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">▣</div>
+              <h3>QR Code Key Sharing</h3>
+              <p>Decryption keys can be shared through a QR-based exchange for added convenience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ui-section" id="workspace">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Interactive UI</p>
+            <h2>Clean encode and decode panels for a real project-style demonstration.</h2>
+            <p>
+              These components are frontend-only mock interfaces designed to show how the system
+              could work in a live application.
+            </p>
+          </div>
+
+          <div class="ui-grid">
+            <article class="tool-card reveal" id="encode">
+              <div class="tool-header">
+                <span class="tool-badge">Encode</span>
+                <h3>Encrypt and hide a secret message</h3>
+              </div>
+              <form class="tool-form" data-demo="encode">
+                <label for="secret-message">Secret Message</label>
+                <textarea id="secret-message" name="secret-message" rows="6" placeholder="Enter the confidential message you want to protect"></textarea>
+
+                <label for="cover-image">Upload Cover Image</label>
+                <input id="cover-image" name="cover-image" type="file" accept="image/*">
+
+                <div class="tool-actions">
+                  <button class="button button-primary" type="submit">Encrypt + Encode</button>
+                  <button class="button button-ghost" type="button">Download Stego-Image</button>
+                </div>
+                <p class="form-note">Demo mode: this UI previews the workflow without backend processing.</p>
+              </form>
+            </article>
+
+            <article class="tool-card reveal" id="decode">
+              <div class="tool-header">
+                <span class="tool-badge accent-alt">Decode</span>
+                <h3>Extract and decrypt hidden content</h3>
+              </div>
+              <form class="tool-form" data-demo="decode">
+                <label for="stego-image">Upload Stego-Image</label>
+                <input id="stego-image" name="stego-image" type="file" accept="image/*">
+
+                <label for="decryption-key">Enter Decryption Key</label>
+                <input id="decryption-key" name="decryption-key" type="text" placeholder="Paste or scan the AES key">
+
+                <div class="tool-actions">
+                  <button class="button button-primary" type="submit">Decode Message</button>
+                  <button class="button button-ghost" type="button">Copy Share Link</button>
+                </div>
+                <p class="form-note">Supports secure retrieval through key verification and controlled access.</p>
+              </form>
+            </article>
+          </div>
+
+          <div class="utility-grid">
+            <article class="utility-card reveal">
+              <h3>QR Key Sharing Mock</h3>
+              <div class="qr-mock" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Generate a QR-style transfer for quick key distribution between trusted users.</p>
+            </article>
+
+            <article class="utility-card reveal">
+              <h3>Secure Share Controls</h3>
+              <div class="share-stack">
+                <div class="share-chip">One-Time View</div>
+                <div class="share-chip">Expires in 24 Hours</div>
+                <div class="share-chip">Protected Link</div>
+              </div>
+              <p>Mock controls demonstrate how secure links and time-limited sharing can appear.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How It Works</p>
+            <h2>Five simple stages turn plain text into protected visual communication.</h2>
+            <p>
+              The process keeps the message confidential from start to finish by combining
+              encryption, image embedding, and secure key-based recovery.
+            </p>
+          </div>
+
+          <div class="workflow-diagram reveal" aria-label="Steganography workflow diagram">
+            <article class="flow-card">
+              <span>01</span>
+              <h3>Enter Secret Message</h3>
+              <p>The user writes the confidential content that needs protection.</p>
+            </article>
+            <div class="flow-link"></div>
+            <article class="flow-card">
+              <span>02</span>
+              <h3>Encrypt Message</h3>
+              <p>AES encryption converts the message into protected ciphertext.</p>
+            </article>
+            <div class="flow-link"></div>
+            <article class="flow-card">
+              <span>03</span>
+              <h3>Embed Into Image</h3>
+              <p>The encrypted payload is hidden inside image data using steganography.</p>
+            </article>
+            <div class="flow-link"></div>
+            <article class="flow-card">
+              <span>04</span>
+              <h3>Share Stego-Image Securely</h3>
+              <p>The generated image is shared using protected links or controlled access.</p>
+            </article>
+            <div class="flow-link"></div>
+            <article class="flow-card">
+              <span>05</span>
+              <h3>Decode With Key</h3>
+              <p>The recipient uses the correct key to extract and decrypt the hidden message.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="technology">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Technology Stack</p>
+            <h2>Simple, practical, and aligned with full-stack project requirements.</h2>
+            <p>
+              This solution keeps the stack clear and approachable while still presenting a strong
+              cybersecurity use case for demonstrations, viva presentations, and portfolios.
+            </p>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-card reveal">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript</p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Backend</h3>
+              <p>Python</p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Image Processing</h3>
+              <p>OpenCV</p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Encryption</h3>
+              <p>Cryptography library with AES</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="container security-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Security Highlights</p>
+            <h2>Dual-layer protection keeps data hidden and unreadable to unauthorized users.</h2>
+            <p>
+              Even if the image is shared publicly, the protected content stays concealed and still
+              requires the correct decryption key for access.
+            </p>
+          </div>
+
+          <div class="security-grid">
+            <article class="security-card reveal">
+              <h3>Encryption + Steganography</h3>
+              <p>AES encrypts the message first, then steganography hides the ciphertext in the image.</p>
+            </article>
+            <article class="security-card reveal">
+              <h3>Protection Against Unauthorized Access</h3>
+              <p>Only users with the correct key and valid access path can recover the hidden content.</p>
+            </article>
+            <article class="security-card reveal">
+              <h3>Data Confidentiality</h3>
+              <p>The image looks ordinary while the embedded payload remains private and secure.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="use-cases">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Use Cases</p>
+            <h2>Useful wherever privacy, controlled access, and discreet communication matter.</h2>
+            <p>
+              The project is suitable for academic work, cybersecurity showcases, and privacy-first
+              applications that need more than simple text encryption.
+            </p>
+          </div>
+
+          <div class="use-case-grid">
+            <article class="use-case-card reveal">
+              <h3>Secure Communication</h3>
+              <p>Send protected instructions or confidential notes through ordinary image files.</p>
+            </article>
+            <article class="use-case-card reveal">
+              <h3>Digital Privacy</h3>
+              <p>Keep sensitive personal or project data hidden from casual observers.</p>
+            </article>
+            <article class="use-case-card reveal">
+              <h3>Data Protection</h3>
+              <p>Add an extra confidentiality layer to digital assets shared across insecure channels.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>A polished showcase for a college project, portfolio, or technical demo.</h2>
+            <p>
+              This website presents the project in a professional and accessible way, balancing
+              security-focused content with a clean modern interface.
+            </p>
+
+            <div class="contact-points">
+              <div>
+                <span>Project Focus</span>
+                <strong>Image Steganography, AES, Secure Sharing</strong>
+              </div>
+              <div>
+                <span>Suggested Contact</span>
+                <strong>yourname@example.com</strong>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your query or collaboration message"></textarea>
+
+            <button class="button button-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Hide Secret Messages Inside Image. Built with HTML, CSS, JavaScript, and a cybersecurity-focused design language.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

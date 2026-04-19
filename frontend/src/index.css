@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 font-body text-slate-100;
+  background-image:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 24%),
+    radial-gradient(circle at 80% 10%, rgba(248, 113, 113, 0.18), transparent 18%),
+    linear-gradient(180deg, #020617 0%, #071424 46%, #030712 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.panel {
+  @apply rounded-3xl border border-white/10 bg-white/5 shadow-panel backdrop-blur;
+}
+
+.status-dot {
+  @apply inline-flex h-2.5 w-2.5 rounded-full;
+}
